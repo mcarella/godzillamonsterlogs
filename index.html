@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Logzilla by mcarella</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/mcarella/logzilla">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/mcarella/logzilla/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/mcarella/logzilla/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Logzilla</h1>
+          <p>Console logs, in a funny way.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/mcarella">mcarella</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="logzilla" class="anchor" href="#logzilla"><span class="octicon octicon-link"></span></a>LOGZILLA</h1>
+
+<p>A fun script made during my spare time, to customize console logs.</p>
+
+<p><img src="http://gamesdbase.com/Media/SYSTEM/Nintendo_NES/Title/big/Godzilla-_Monster_of_Monsters_-_1989_-_Toho_Company.jpg" alt=""></p>
+
+<h2>
+<a name="customization" class="anchor" href="#customization"><span class="octicon octicon-link"></span></a>Customization</h2>
+
+<h3>
+<a name="settings" class="anchor" href="#settings"><span class="octicon octicon-link"></span></a>Settings</h3>
+
+<p><code>prefix</code> is the prefix that appears before every console log
+<code>fontSize</code> logzilla's font size
+<code>colors</code> text color
+<code>bgColors</code> text's background color
+<code>disableConsoleLog</code> boolean value. Disable all regular console logs, leaving logzilla only.</p>
+
+<h3>
+<a name="message-types" class="anchor" href="#message-types"><span class="octicon octicon-link"></span></a>Message types</h3>
+
+<p>We have four different message types that can appear in console:
+<code>normal</code> is a regular console log
+<code>warn</code> a warning message (console.warn)
+<code>error</code> an error message (console.error)
+<code>debug</code> a debug message</p>
+
+<h3>
+<a name="changing-settings" class="anchor" href="#changing-settings"><span class="octicon octicon-link"></span></a>Changing settings</h3>
+
+<p>So, if you want to change warn message color, just config your settings like this:
+<code>settings.colors.warn</code></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h2>
+<a name="logging-functions" class="anchor" href="#logging-functions"><span class="octicon octicon-link"></span></a>Logging functions</h2>
+
+<p>Every logging function can accept an argument or not:</p>
+
+<p><code>logzilla_success('message',object)</code>
+<code>logzilla_success('message')</code></p>
+
+<p><code>logzilla_warn('message',object)</code>
+<code>logzilla_warn('message')</code></p>
+
+<p><code>...</code></p>
+
+<h2>
+<a name="profiling" class="anchor" href="#profiling"><span class="octicon octicon-link"></span></a>Profiling</h2>
+
+<p>Logzilla helps you to profile single functions and their execution time. </p>
+
+<p><code>logzilla_profiler('custom message',myFunction)</code></p>
+
+<h2>
+<a name="namespace-pollution" class="anchor" href="#namespace-pollution"><span class="octicon octicon-link"></span></a>Namespace pollution</h2>
+
+<p>Logzilla helps you to check for global variables and namespace pollution. 
+<code>logzilla_pollution()</code></p>
+
+<h2>
+<a name="clearing-console" class="anchor" href="#clearing-console"><span class="octicon octicon-link"></span></a>Clearing console</h2>
+
+<p><code>logzilla_flush()</code></p>
+
+<h2>
+<a name="rendering-custom-styles" class="anchor" href="#rendering-custom-styles"><span class="octicon octicon-link"></span></a>Rendering custom styles</h2>
+
+<p>If you want to see how your custom logs look like, just invoke:
+<code>logzilla_checkStyles()</code></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
