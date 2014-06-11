@@ -39,3 +39,13 @@ Every logging function can accept an argument or not:
 Logzilla helps you to profile single functions and their execution time. 
 `logzilla_profiler('custom message',myFunction)`
 
+## Namespace pollution
+Logzilla helps you to check for global variables and namespace pollution. 
+`logzilla_pollution()`
+
+## Clearing console
+`logzilla_flush()`
+
+## Rendering custom styles
+If you want to see how your custom logs look like, just invoke:
+`logzilla_checkStyles()`
