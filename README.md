@@ -37,8 +37,6 @@ Every logging function can accept an argument or not:
 
 `...`
 
-![](https://dl.dropboxusercontent.com/u/79294412/logzilla1.png)
-
 ## Profiling
 Logzilla helps you to profile single functions and their execution time. 
 
@@ -59,4 +57,5 @@ Logzilla helps you to check for global variables and namespace pollution.
 If you want to see how your custom logs look like, just invoke:
 `logzilla_checkStyles()`
 
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla1.png)
 ![](https://dl.dropboxusercontent.com/u/79294412/logzilla2.png)
