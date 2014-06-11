@@ -25,6 +25,8 @@ We have four different message types that can appear in console:
 So, if you want to change warn message color, just config your settings like this:
 `settings.colors.warn`
 
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla1.png)
+
 ## Usage
 ## Logging functions
 Every logging function can accept an argument or not:
@@ -42,6 +44,10 @@ Logzilla helps you to profile single functions and their execution time.
 
 `logzilla_profiler('custom message',myFunction)`
 
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla3.png)
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla4.png)
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla5.png)
+
 ## Namespace pollution
 Logzilla helps you to check for global variables and namespace pollution. 
 `logzilla_pollution()`
@@ -52,3 +58,5 @@ Logzilla helps you to check for global variables and namespace pollution.
 ## Rendering custom styles
 If you want to see how your custom logs look like, just invoke:
 `logzilla_checkStyles()`
+
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla2.png)
