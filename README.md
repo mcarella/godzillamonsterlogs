@@ -25,8 +25,6 @@ We have four different message types that can appear in console:
 So, if you want to change warn message color, just config your settings like this:
 `settings.colors.warn`
 
-![](https://dl.dropboxusercontent.com/u/79294412/logzilla1.png)
-
 ## Usage
 ## Logging functions
 Every logging function can accept an argument or not:
@@ -38,6 +36,8 @@ Every logging function can accept an argument or not:
 `logzilla_warn('message')`
 
 `...`
+
+![](https://dl.dropboxusercontent.com/u/79294412/logzilla1.png)
 
 ## Profiling
 Logzilla helps you to profile single functions and their execution time. 
