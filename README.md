@@ -34,6 +34,7 @@ Every logging function can accept an argument or not:
 
 `logzilla_warn('message',object)`
 `logzilla_warn('message')`
+
 `...`
 
 ## Profiling
