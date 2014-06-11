@@ -26,7 +26,7 @@ So, if you want to change warn message color, just config your settings like thi
 `settings.colors.warn`
 
 ## Usage
-## Logging functions
+### Logging functions
 Every logging function can accept an argument or not:
 
 `logzilla_success('message',object)`
@@ -37,7 +37,7 @@ Every logging function can accept an argument or not:
 
 `...`
 
-## Profiling
+### Profiling
 Logzilla helps you to profile single functions and their execution time. 
 
 `logzilla_profiler('custom message',myFunction)`
@@ -46,14 +46,14 @@ Logzilla helps you to profile single functions and their execution time.
 ![](https://dl.dropboxusercontent.com/u/79294412/logzilla4.png)
 ![](https://dl.dropboxusercontent.com/u/79294412/logzilla5.png)
 
-## Namespace pollution
+### Namespace pollution
 Logzilla helps you to check for global variables and namespace pollution. 
 `logzilla_pollution()`
 
-## Clearing console
+### Clearing console
 `logzilla_flush()`
 
-## Rendering custom styles
+### Rendering custom styles
 If you want to see how your custom logs look like, just invoke:
 `logzilla_checkStyles()`
 
