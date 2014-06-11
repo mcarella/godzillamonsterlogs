@@ -28,6 +28,7 @@ So, if you want to change warn message color, just config your settings like thi
 ## Usage
 ## Logging functions
 Every logging function can accept an argument or not:
+
 `logzilla_success('message',object)`
 `logzilla_success('message')`
 
@@ -37,6 +38,7 @@ Every logging function can accept an argument or not:
 
 ## Profiling
 Logzilla helps you to profile single functions and their execution time. 
+
 `logzilla_profiler('custom message',myFunction)`
 
 ## Namespace pollution
