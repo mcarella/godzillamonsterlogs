@@ -1,4 +1,4 @@
-LOGZILLA
+GODZILLAMONSTERLOGS
 ========
 
 A fun script made during my spare time, to customize console logs.
