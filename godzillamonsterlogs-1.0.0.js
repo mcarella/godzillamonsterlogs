@@ -7,12 +7,12 @@
 (function() {
 
 	/* 	===========================================================
-		LOGZILLA BASIC SETTINGS : customize and have fun!
+		GODZILLAMONSTERLOGS BASIC SETTINGS : customize and have fun!
 	===============================================================- */
 
 	var settings = {
 
-		prefix: 'LOGZILLA ~ ',
+		prefix: 'GODZILLA ~ ',
 		disableConsoleLog: false,
 		
 		fontSize : {
@@ -55,7 +55,7 @@
 	/* Init function, self invoked
 	------------------------------------------ */
 
-	var logzilla_init = function() {
+	var godzilla_init = function() {
 
 		// Disable native console log
 
@@ -72,7 +72,7 @@
 	/* 	Regular console log
 	------------------------------------------ */
 
-	var logzilla = function(message,value) {
+	var godzilla = function(message,value) {
 		var message = settings.prefix + message;
 		var style = 'background-color: '+ settings.bgColors.normal + '; color: ' + settings.colors.normal + '; font-size: ' + settings.fontSize.normal;
 		console.info("%c" + message, style, value);
@@ -82,7 +82,7 @@
 	/* 	Warning
 	------------------------------------------ */
 
-	var logzilla_warn = function(message,value) {
+	var godzilla_warn = function(message,value) {
 		var message = settings.prefix + message;
 		var style = 'background-color: '+ settings.bgColors.warn + '; color: ' + settings.colors.warn + '; font-size: ' + settings.fontSize.warn;
 		console.warn("%c" + message, style, value);
@@ -92,7 +92,7 @@
 	/* 	Error
 	------------------------------------------ */
 
-	var logzilla_error = function(message,value) {
+	var godzilla_error = function(message,value) {
 		var message = settings.prefix + message;
 		var style = 'background-color: '+ settings.bgColors.error + '; color: ' + settings.colors.error + '; font-size: ' + settings.fontSize.error;
 		console.error("%c" + message, style ,value);
@@ -102,7 +102,7 @@
 	/* 	Success
 	------------------------------------------ */
 
-	var logzilla_success = function(message,value) {
+	var godzilla_success = function(message,value) {
 		var message = settings.prefix + message;
 		var style = 'background-color: '+ settings.bgColors.success + '; color: ' + settings.colors.success + '; font-size: ' + settings.fontSize.error;
 		console.log("%c" + message, style, value);
@@ -112,7 +112,7 @@
 	/* 	Debug
 	------------------------------------------ */
 
-	var logzilla_debug = function(message,value) {
+	var godzilla_debug = function(message,value) {
 		var message = settings.prefix + message;
 		var style = 'background-color: '+ settings.bgColors.debug + '; color: ' + settings.colors.debug + '; font-size: ' + settings.fontSize.debug;
 		console.log("%c" + message, style, value);
@@ -122,7 +122,7 @@
 	/* 	Flush
 	------------------------------------------ */
 
-	var logzilla_flush = function() {
+	var godzilla_flush = function() {
 		console.clear();
 	}
 
@@ -130,7 +130,7 @@
 	/* 	Function profiler
 	------------------------------------------ */
 
-	var logzilla_profiler = function(message,myFunction) {
+	var godzilla_profiler = function(message,myFunction) {
 		console.time(settings.prefix + ' ' + message);
 		console.profile(settings.prefix + ' ' + message);
 		console.timeline(settings.prefix + ' ' + message);
@@ -145,7 +145,7 @@
 	/* 	Check for global pollution
 	------------------------------------------ */
 
-	var logzilla_pollution = function() {
+	var godzilla_pollution = function() {
 
 		var filter = function(afterPollution,beforePollution) { 
 			return afterPollution.filter(function(i) {
@@ -156,9 +156,9 @@
         outerspace.afterPollution = Object.getOwnPropertyNames(window);
 		outerspace.libObjects = filter(outerspace.afterPollution, outerspace.beforePollution);	
 
-		logzilla('BEFORE POLLUTION: '+outerspace.beforePollution.length+' objects.');
-		logzilla('AFTER POLLUTION: '+outerspace.afterPollution.length+' objects.');
-		logzilla('OBJECTS IN THE OUTER SPACE ('+outerspace.libObjects.length+'): ',outerspace.libObjects);
+		godzilla('BEFORE POLLUTION: '+outerspace.beforePollution.length+' objects.');
+		godzilla('AFTER POLLUTION: '+outerspace.afterPollution.length+' objects.');
+		godzilla('OBJECTS IN THE OUTER SPACE ('+outerspace.libObjects.length+'): ',outerspace.libObjects);
 
 	}
 
@@ -166,32 +166,32 @@
 	/* 	Check styles
 	------------------------------------------ */
 
-	var logzilla_checkStyles = function() {
-		this.logzilla('this a regular console log');
-		this.logzilla_warn('this a warning');
-		this.logzilla_error('this an error');
-		this.logzilla_debug('this a debug message');
-		this.logzilla_success('this a success message');
+	var godzilla_checkStyles = function() {
+		this.godzilla('this a regular console log');
+		this.godzilla_warn('this a warning');
+		this.godzilla_error('this an error');
+		this.godzilla_debug('this a debug message');
+		this.godzilla_success('this a success message');
 	}
 
 	/* ------------------------------------------
 	/* Self invoking init
 	------------------------------------------ */
 
-	logzilla_init();
+	godzilla_init();
 
 	/* ------------------------------------------
 	/* Exposing functions
 	------------------------------------------ */
 
-	window.logzilla = logzilla,
-	window.logzilla_warn  = logzilla_warn,
-	window.logzilla_error  = logzilla_error,
-	window.logzilla_success = logzilla_success,
-	window.logzilla_debug = logzilla_debug,
-	window.logzilla_flush = logzilla_flush,
-	window.logzilla_profiler = logzilla_profiler,
-	window.logzilla_pollution  = logzilla_pollution,
-	window.logzilla_checkStyles = logzilla_checkStyles
+	window.godzilla = godzilla,
+	window.godzilla_warn  = godzilla_warn,
+	window.godzilla_error  = godzilla_error,
+	window.godzilla_success = godzilla_success,
+	window.godzilla_debug = godzilla_debug,
+	window.godzilla_flush = godzilla_flush,
+	window.godzilla_profiler = godzilla_profiler,
+	window.godzilla_pollution  = godzilla_pollution,
+	window.godzilla_checkStyles = godzilla_checkStyles
 
 })();
